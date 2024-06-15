@@ -1,0 +1,161 @@
+@font-face {
+  font-family:squidgameFont;
+  src: url("font/GameOfSquids-1GMVL.ttf");
+}
+
+@font-face {
+  font-family:coolFont;
+  src: url("font/Sakana.ttf");
+}
+
+@font-face {
+  font-family:wirewalker;
+  src: url("font/WirewalkersVertigo.ttf");
+}
+@font-face {
+  font-family: minecraft;
+  src: url(font/minecraft-font/MinecraftRegular-Bmg3.otf);
+}
+
+h1,h2,h3,h4,h5,h6,a,hr,button,input,label {
+    font-family: coolFont;
+    border-radius:40px;
+    background-image: url("./bilder/Sakura-feature-image-2995703780.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0,0,0);
+}
+
+html {
+    background-image: url("./bilder/th-3125799666.jpeg");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    cursor: crosshair;
+}
+
+h1 {
+ border-radius:20px;
+ width:380px;
+ 
+}
+
+ #willkommen, #basis {
+  width: 226px;
+  font-size: 29px;
+  border-radius: 22px;
+}
+
+h2 {
+ width:360px;
+}
+
+a {
+  font-size:18px;
+  padding:3px;
+}
+
+#stevesHead{
+  width: 100px;
+  height: 100px;
+}
+
+#stevesBody{
+ width: 50px;
+ height: 300px;
+ margin-left: 25px;
+}
+
+#steve{
+  display:flex;
+  flex-direction: column;
+}
+#stevetext{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#stevetext2{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+iframe{
+  border-radius:40px;
+  height: 300px;
+  width: 400px;
+}
+
+#button{
+ font-size:20px;
+ margin-top:60px;
+}
+
+.sakana{
+  font-family:coolFont;
+  padding:2px;
+  opacity: 1;
+}
+
+.sakana:hover{
+  opacity: 0.7;
+}
+.squidgame{
+  font-family:squidgameFont;
+  opacity: 1;
+}
+
+.squidgame:hover{
+  opacity: 0.7;
+}
+
+#choosefont{
+  width:220px;
+}
+
+.wirewalker{
+  padding:2px;
+  font-family:wirewalker;
+  opacity: 1;
+}
+
+.wirewalker:hover{
+  opacity: 0.7;
+}
+#br2{
+  margin: 20px;
+}
+#logbuch{
+  display:flex;
+  background-image: url("./bilder/book.png");
+  background-repeat: no-repeat;
+ background-size:cover;
+ width: 400px;
+ height: 500px;
+}
+#logbuchtext{
+  font-family: minecraft;
+  margin-top: 34px;
+  margin-bottom: 60px;
+  margin-left: 40px;
+  margin-right: 38px;
+  font-size: 20px;
+  line-height:34px; 
+}
+
+#logbuchu{
+  width: 150px;
+  
+}
+#arrowleft, #arrowright{
+  width: 80px;
+  margin-left: 80px;
+}
+#hide{
+  height: 44px;
+
+}
+#hide:hover{
+  height: 44px;
+  opacity: 0.7;
+}
