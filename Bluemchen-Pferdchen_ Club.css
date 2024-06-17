@@ -17,13 +17,14 @@
   src: url(font/minecraft-font/MinecraftRegular-Bmg3.otf);
 }
 
-h1,h2,h3,h4,h5,h6,a,hr,button,input,label {
+h1,h2,h3,h4,h5,h6,a,hr,button,input,label,iframe {
     font-family: coolFont;
     border-radius:40px;
     background-image: url("./bilder/Sakura-feature-image-2995703780.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(0,0,0);
+    
 }
 
 html {
@@ -69,6 +70,7 @@ a {
 #steve{
   display:flex;
   flex-direction: column;
+  
 }
 #stevetext{
   display: flex;
@@ -88,7 +90,7 @@ iframe{
 
 #button{
  font-size:20px;
- margin-top:60px;
+ 
 }
 
 .sakana{
@@ -153,7 +155,7 @@ iframe{
 }
 #hide{
   height: 44px;
-
+  position:fixed;
 }
 #hide:hover{
   height: 44px;
