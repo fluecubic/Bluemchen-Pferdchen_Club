@@ -91,7 +91,11 @@ function stop(audioElement) {
  
  //logbuch
  let seite = 1;
- let seite1 = "Logbuch<br>seite 1";
+ let seite1 = "Logbuch<br>
+    Ränge:<br>5 Sterne:<br>Hannes<br>
+    Paul,<br>Milo,<br>Richter:<br>Aaron<br>4 Sterne:<br>
+    Jonas<br>3 Sterne:<br>Jannik,Anton,Max im zoo<br>
+    2 Sterne:<br>Jonathan,Sjard,Helene,Mathilda";
  let seite2 = "seite 2";
  let seite3 = "seite 3";
  var arrowleft = document.getElementById("arrowleft");
