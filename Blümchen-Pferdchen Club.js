@@ -1,4 +1,14 @@
-
+var online = document.getElementById("online")
+let namen = [];
+let name = prompt("Name:") +"<br>";
+if (namen.length > 0) {
+   namen[namen.length++] = name;
+   online.innerHTML = namen;
+}
+else{
+  namen[0] = name;
+  online.innerHTML = namen;
+}
    
      //links werden durchsichtig wenn die maus drauf ist
       function durchsicht(){
@@ -69,60 +79,59 @@ function stop(audioElement) {
 
  //font wählen
  var sakana = document.getElementById("sakana");
- var squidgame = document.getElementById("squidgame");
- var wirewalker = document.getElementById("wirewalker");
- let allElements = document.getElementById("willkommen");
+var squidgame = document.getElementById("squidgame");
+var wirewalker = document.getElementById("wirewalker");
+var allElements = document.getElementsByClassName("txt");
 
- function sakanaselect(){
- console.log("sakana selectet");
- allElements.style.fontfamily = "coolFont";
- }
- function squidgameselect(){
-  console.log("squidgame selectet");
- allElements.style.fontfamily = "squidgameFont";
+function sakanaselect() {
+  for (var i = 0; i < allElements.length; i++) {
+    allElements[i].style.fontFamily = "coolFont";
   }
-  function wirewalkerselect(){
-    console.log("wirewalker selectet");
-    allElements.style.fontfamily = "wirewalker";
-    }
- sakana.onclick = sakanaselect;
- squidgame.onclick = squidgameselect;
- wirewalker.onclick = wirewalkerselect;
+}
+
+function squidgameselect() {
+  for (var i = 0; i < allElements.length; i++) {
+    allElements[i].style.fontFamily = "squidgameFont";
+  }
+}
+
+function wirewalkerselect() {
+  for (var i = 0; i < allElements.length; i++) {
+    allElements[i].style.fontFamily = "wirewalker";
+  }
+}
+
+sakana.onclick = sakanaselect;
+squidgame.onclick = squidgameselect;
+wirewalker.onclick = wirewalkerselect;
  
  //logbuch
- let seite = 1;
- let seite1 = "Logbuch<br>Ränge:<br>5 Sterne:<br>Hannes, Paul, Milo,<br>Richter:<br>Aaron<br>4 Sterne:<br>Jonas<br>3 Sterne:<br>Jannik, Anton, Max im zoo<br> 2 Sterne:<br>Jonathan, Sjard, Helene, Mathilda";
- let seite2 = "seite 2";
- let seite3 = "seite 3";
+ let seite = 0;
+ let seite0 = "Logbuch<br>Ränge:<br>5 Sterne:<br>Hannes, Paul, Milo,<br>Richter:<br>Aaron<br>4 Sterne:<br>Jonas<br>3 Sterne:<br>Jannik, Anton, Max im zoo<br> 2 Sterne:<br>Jonathan, Sjard, Helene, Mathilda";
+ let seite1 = "1";
+ let seite2 = "2";
+ let seite3 = "3";
+ let seiten = [seite0,seite1,seite2,seite3];
  var arrowleft = document.getElementById("arrowleft");
  var arrowright = document.getElementById("arrowright");
  var logbuchtext = document.getElementById("logbuchtext");
  function seitevor(){ 
   seite++;
- 
+  console.log(seite);
+  logbuchtext.innerHTML = seiten[seite];
+  
 };
  function seitezuruck() { 
   seite--;
-  
+  console.log(seite);
+  logbuchtext.innerHTML = seiten[seite];
   };
 
  arrowleft.onclick = seitezuruck;
  arrowright.onclick = seitevor;
-
-if (seite == 1) {
-  logbuchtext.innerHTML = seite1;
-  console.log("1");
-}
-
-if (seite == 2) {
-  logbuchtext.innerHTML = seite2;
-  console.log("2");
-}
-
-if (seite == 3) {
-  logbuchtext.innerHTML = seite3;
-  console.log("3");
-}
+ 
+ logbuchtext.innerHTML = seiten[seite];
+ 
 
 //hide
 var hide = document.getElementById("hide");
