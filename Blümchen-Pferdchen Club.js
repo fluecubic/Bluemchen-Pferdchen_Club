@@ -1,12 +1,11 @@
 var online = document.getElementById("online")
 let namen = [];
-let name = prompt("Name:") +"<br>";
 if (namen.length > 0) {
-   namen[namen.length++] = name;
+   namen[namen.length++] = prompt("Name:") +"<br>";
    online.innerHTML = namen;
 }
 else{
-  namen[0] = name;
+  namen[0] = prompt("Name:") +"<br>";
   online.innerHTML = namen;
 }
    
