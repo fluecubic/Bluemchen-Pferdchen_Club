@@ -70,7 +70,8 @@ a {
 #steve{
   display:flex;
   flex-direction: column;
-  
+  position: fixed;
+  margin-left: 85%;
 }
 #stevetext{
   display: flex;
@@ -156,6 +157,7 @@ iframe{
 #hide{
   height: 44px;
   position:fixed;
+  margin-top: 68%;
 }
 #hide:hover{
   height: 44px;
