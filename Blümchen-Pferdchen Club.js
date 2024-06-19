@@ -1,13 +1,41 @@
-var online = document.getElementById("online")
+var online = document.getElementById("online");
+let name = prompt("Mit eingabe des Namens bestätigts du die Datenschutzerklärung.")
 let namen = [];
+
+
+function storeArray() {
+  localStorage.setItem('namen', JSON.stringify(namen));
+}
+
+function retrieveArray() {
+  const storedArray = JSON.parse(localStorage.getItem('namen'));
+  if (storedArray) {
+    namen = storedArray;
+  } else {
+    namen = [];
+  }
+}
+
 if (namen.length > 0) {
-   namen[namen.length++] = prompt("Name:") +"<br>";
-   online.innerHTML = namen;
+   namen[namen.length++] = name;
 }
 else{
-  namen[0] = prompt("Name:") +"<br>";
-  online.innerHTML = namen;
+  namen[0] = name; 
 }
+
+function storeArray() {
+  localStorage.setItem('namen', JSON.stringify(namen));
+}
+
+function retrieveArray() {
+  const storedArray = JSON.parse(localStorage.getItem('namen'));
+  if (storedArray) {
+    namen = storedArray;
+  } else {
+    namen = [];
+  }
+}
+online.innerHTML = namen;
    
      //links werden durchsichtig wenn die maus drauf ist
       function durchsicht(){
