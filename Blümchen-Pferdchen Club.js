@@ -134,8 +134,8 @@ wirewalker.onclick = wirewalkerselect;
  
  //logbuch
  let seite = 0;
- let seite0 = "Logbuch<br>Ränge:<br>5 Sterne:<br>Hannes, Paul, Milo,<br>Richter:<br>Aaron<br>4 Sterne:<br>Jonas<br>3 Sterne:<br>Jannik, Anton, Max im zoo<br> 2 Sterne:<br>Jonathan, Sjard, Helene, Mathilda";
- let seite1 = "1";
+ let seite0 = "Logbuch<br>Ränge:<br>5 Sterne:<br>Hannes, Paul, Milo, Jonas<br>Richter:<br>Aaron<br>3 Sterne:<br>Jannik, Anton, Max im zoo<br> 2 Sterne:<br>Jonathan, Sjard, Helene, Mathilda";
+ let seite1 = "1"; 
  let seite2 = "2";
  let seite3 = "3";
  let seiten = [seite0,seite1,seite2,seite3];
