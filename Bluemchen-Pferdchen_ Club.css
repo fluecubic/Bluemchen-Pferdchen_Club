@@ -159,3 +159,22 @@ iframe{
   height: 44px;
   opacity: 0.7;
 }
+#bestof:hover{
+  opacity: 0.7;
+}
+#login{
+  background-image: url("./bilder/th-3125799666.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: crosshair;
+    border-radius:20px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+#weiter:hover{
+   opacity: 0.7;
+   
+}

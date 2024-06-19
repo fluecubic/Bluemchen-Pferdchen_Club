@@ -1,5 +1,17 @@
+//login
+var weiter = document.getElementById("weiter");
+var login = document.getElementById("login");
+var inputlogin = document.getElementById("inputlogin");
+
+function weg() {
+  login.style.display = "none";
+}
+
+weiter.onclick = weg;
+
+
 var online = document.getElementById("online");
-let name = prompt("Mit eingabe des Namens bestätigts du die Datenschutzerklärung.")
+let name = inputlogin.value;
 let namen = [];
 
 
@@ -172,3 +184,4 @@ function hideit() {
   
 }
 hide.onclick = hideit;
+
