@@ -17,7 +17,7 @@
   src: url(font/minecraft-font/MinecraftRegular-Bmg3.otf);
 }
 
-h1,h2,h3,h4,h5,h6,a,hr,button,input,label,iframe {
+h1,h2,h3,h4,h5,h6,a,hr,button,input,label,iframe{
     font-family: coolFont;
     border-radius:40px;
     background-image: url("./bilder/Sakura-feature-image-2995703780.png");
@@ -96,17 +96,11 @@ iframe{
   opacity: 1;
 }
 
-.sakana:hover{
-  opacity: 0.7;
-}
 .squidgame{
   font-family:squidgameFont;
   opacity: 1;
 }
 
-.squidgame:hover{
-  opacity: 0.7;
-}
 
 #choosefont{
   width:220px;
@@ -118,9 +112,6 @@ iframe{
   opacity: 1;
 }
 
-.wirewalker:hover{
-  opacity: 0.7;
-}
 #br2{
   margin: 20px;
 }
@@ -155,13 +146,7 @@ iframe{
   position:fixed;
   margin-top:50%;
 }
-#hide:hover{
-  height: 44px;
-  opacity: 0.7;
-}
-#bestof:hover{
-  opacity: 0.7;
-}
+
 #login{
   background-image: url("./bilder/th-3125799666.jpeg");
     background-repeat: no-repeat;
@@ -177,4 +162,22 @@ iframe{
 #weiter:hover{
    opacity: 0.7;
    
+}
+a:hover{
+  opacity: 0.7;
+}
+button:hover{
+  opacity: 0.7;
+}
+label:hover{
+  opacity: 0.7;
+}
+#Madeby{
+    font-family: coolFont;
+    border-radius:40px;
+    background-image: url("./bilder/Sakura-feature-image-2995703780.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0,0,0);
+    width: 300px;
 }

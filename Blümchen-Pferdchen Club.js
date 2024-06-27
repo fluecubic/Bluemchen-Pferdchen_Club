@@ -74,30 +74,36 @@ var wirewalker = document.getElementById("wirewalker");
 var allElements = document.getElementsByClassName("txt");
 
 function sakanaselect() {
-  for (var i = 0; i < allElements.length; i++) {
-    allElements[i].style.fontFamily = "coolFont";
-  }
+  localStorage.removeItem("Fontfamily");
+ localStorage.setItem("Fontfamily","coolFont");
+ window.location.reload();
 }
 
 function squidgameselect() {
-  for (var i = 0; i < allElements.length; i++) {
-    allElements[i].style.fontFamily = "squidgameFont";
-  }
+  localStorage.removeItem("Fontfamily");
+  localStorage.setItem("Fontfamily","squidgameFont");
+  window.location.reload(); 
 }
 
 function wirewalkerselect() {
-  for (var i = 0; i < allElements.length; i++) {
-    allElements[i].style.fontFamily = "wirewalker";
-  }
+  localStorage.removeItem("Fontfamily");
+  localStorage.setItem("Fontfamily","wirewalker");
+  window.location.reload();
 }
 
 sakana.onclick = sakanaselect;
 squidgame.onclick = squidgameselect;
 wirewalker.onclick = wirewalkerselect;
+
+for (var i = 0; i < allElements.length; i++) {
+  allElements[i].style.fontFamily = localStorage.getItem("Fontfamily");
+}
  
  //logbuch
  let seite = 0;
- let seite0 = "Logbuch<br>Ränge:<br>5 Sterne:<br>Hannes, Paul, Milo, Jonas<br>Richter:<br>Aaron<br>3 Sterne:<br>Jannik, Anton, Max im zoo, Sjard<br> 2 Sterne:<br>Jonathan,  Helene, Mathilda";
+ let seite0 = "Logbuch<br>Ränge:<br>5 Sterne:<br>Hannes, Paul, Milo, Jonas" +
+ "<br>Richter:<br>Aaron<br>3 Sterne:<br>Jannik, Anton, Max im zoo<br>" +
+ "2 Sterne:<br>Jonathan, Sjard, Helene, Mathilda";
  let seite1 = "1"; 
  let seite2 = "2";
  let seite3 = "3";

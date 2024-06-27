@@ -23,3 +23,9 @@ document.addEventListener('mousemove', (e) => {
   const angle = Math.atan2(y, x) * 360 / Math.PI;
   rotatingElement.style.transform = `rotate(${angle}deg)`;
 });
+//Font
+var allElements = document.getElementsByClassName("txt");
+
+for (var i = 0; i < allElements.length; i++) {
+  allElements[i].style.fontFamily = localStorage.getItem("Fontfamily");
+}
