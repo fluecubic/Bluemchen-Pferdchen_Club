@@ -32,7 +32,7 @@ document.addEventListener('mousemove', (e) => {
 //sounds
   let sound;
   let min = 1; // Untergrenze
-  let max = 45; // Obergrenze
+  let max = 73; // Obergrenze
   let zufallszahl;
   let audioContext;
 
