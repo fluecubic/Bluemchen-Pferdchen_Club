@@ -181,3 +181,84 @@ label:hover{
     color: rgb(0,0,0);
     width: 300px;
 }
+
+@media  (max-width: 412px){
+  h1 {
+    border-radius:20px;
+    width:90%;
+    font-size: 300%;
+   }
+
+   #willkommen, #basis, #logbuchu, #choosefont {
+    width: 85%;
+    font-size: 250%;
+    border-radius: 22px;
+  }
+
+  a {
+    font-size:100%;
+    padding:3px;
+    width:80%;
+    
+  }
+  
+  iframe{
+    width: 90%;
+    height: 339.3px;
+  }
+
+  #hide{
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+  
+  
+
+  label{
+    width: 400px;
+    font-size: 25px;
+  }
+
+  input{
+    width: 18px;
+    height: 18px;
+  }
+
+  #Madeby{
+    width: 280px;
+    font-size: 20px;
+  }
+
+  #arrowleft, #arrowright{
+    height:50px ;
+    width: 90px;
+    margin-left: 70px;
+
+  }   
+
+  #steve{
+    display: none;
+  }
+
+  #button{
+    font-size: 25px;
+    width: 90%;
+    
+  }
+  
+  body{
+    margin: 0px;
+    margin-left: 5px;
+  }
+  html{
+    background-size:cover;
+    max-width: 412px;
+  }
+ 
+}
+
+html{
+ max-width: 10000px;
+ margin: 0px;
+}
