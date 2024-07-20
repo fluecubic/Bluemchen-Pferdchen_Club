@@ -144,7 +144,7 @@ iframe{
 #hide{
   height: 44px;
   position:fixed;
-  margin-top:50%;
+  margin-top:100%;
 }
 
 #login{
@@ -180,6 +180,11 @@ label:hover{
     background-size: cover;
     color: rgb(0,0,0);
     width: 300px;
+}
+
+#funlink1,#funlink2,#funlink3,#funlink4{
+margin-bottom: 10px;
+font-size: 25px;
 }
 
 @media  (max-width: 412px){
