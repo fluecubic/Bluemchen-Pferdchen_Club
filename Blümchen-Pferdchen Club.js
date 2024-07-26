@@ -1,5 +1,9 @@
 
-   
+
+
+
+
+  
      //links werden durchsichtig wenn die maus drauf ist
       function durchsicht(){
         this.style.opacity=0.7;
@@ -101,10 +105,12 @@ for (var i = 0; i < allElements.length; i++) {
  
  //logbuch
  let seite = 0;
- let seite0 = "Logbuch<br>Ränge:<br>5 Sterne:<br>Hannes, Paul, Milo, Jonas" +
+ let seite0 = "Club Treffen 1.8.24-3.8.24<br>🌍Location:<br>Bei Jonas in Worin<br>"+
+ "💪Was machen:<br>Website tunen, Baden, Survival<br>👥Schon dabei:<br>"+
+ "Jonas, Milo, Florian<br>📞Weitere Infos:<br>Ruf Jonas an";
+ let seite1 = "Logbuch<br>Ränge:<br>5 Sterne:<br>Hannes, Paul, Milo, Jonas" +
  "<br>Richter:<br>Aaron<br>3 Sterne:<br>Jannik, Anton, Max im zoo<br>" +
- "2 Sterne:<br>Jonathan, Sjard, Helene, Mathilda";
- let seite1 = "1"; 
+ "2 Sterne:<br>Jonathan, Sjard, Helene, Mathilda"; 
  let seite2 = "2";
  let seite3 = "3";
  let seiten = [seite0,seite1,seite2,seite3];

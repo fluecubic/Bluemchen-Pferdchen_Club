@@ -72,6 +72,7 @@ a {
   flex-direction: column;
   position: fixed;
   margin-left: 85%;
+  
 }
 #stevetext{
   display: flex;
