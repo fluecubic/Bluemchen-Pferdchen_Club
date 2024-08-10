@@ -94,13 +94,27 @@ function wirewalkerselect() {
   setFont()
 }
 
+function minecraftselect() {
+  localStorage.removeItem("Fontfamily");
+  localStorage.setItem("Fontfamily","minecraft");
+  setFont()
+}
+
 function setFont() {
   for (var i = 0; i < allElements.length; i++) {
   allElements[i].style.fontFamily = localStorage.getItem("Fontfamily");
 }
 }
 
-   addEventListener("mousemove",fonts[selectFonts.value])
+   if (selectFonts.value == 0) {
+      sakanaselect()
+   } else if(selectFonts.value == 1) {
+     squidgameselect()
+   } else if(selectFonts.value == 2){
+     wirewalkerselect()
+   } else{
+     minecraftselect()
+   }
 
 
 
