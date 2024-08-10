@@ -74,7 +74,7 @@ function stop(audioElement) {
  //font wählen
  let allElements = document.getElementsByClassName("txt")
  let selectFonts = document.getElementById("Select");
- let lastfont; 
+ let lastfont = 0; 
 
 function sakanaselect() {
  localStorage.setItem("Fontfamily","coolFont");
