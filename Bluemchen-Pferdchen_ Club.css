@@ -95,7 +95,13 @@ iframe{
 #choosefont{
   width:220px;
 }
-
+option{
+    border-radius:40px;
+    background-image: url("./bilder/Sakura-feature-image-2995703780.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0,0,0);
+}
 #Sakana{
   font-family: coolFont;
 }
