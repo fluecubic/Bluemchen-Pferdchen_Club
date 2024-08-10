@@ -99,6 +99,7 @@ function setFont() {
   for (var i = 0; i < allElements.length; i++) {
   allElements[i].style.fontFamily = localStorage.getItem("Fontfamily");
 }
+window.location.reload()
 }
 
    if (selectFonts.value == 0) {
