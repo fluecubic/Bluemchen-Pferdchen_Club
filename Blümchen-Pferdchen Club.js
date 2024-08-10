@@ -74,6 +74,7 @@ function stop(audioElement) {
  //font wählen
  let allElements = document.getElementsByClassName("txt")
  let selectFonts = document.getElementById("Select");
+ let lastfont; 
 
 function sakanaselect() {
  localStorage.setItem("Fontfamily","coolFont");
@@ -93,13 +94,18 @@ function wirewalkerselect() {
 function minecraftselect() {
   localStorage.setItem("Fontfamily","minecraft");
   setFont()
-}
+  lastfont = selectFonts.value;
+  }
 
 function setFont() {
   for (var i = 0; i < allElements.length; i++) {
   allElements[i].style.fontFamily = localStorage.getItem("Fontfamily");
 }
-window.location.reload()
+if (lastfont != selectFonts.value) {
+  window.location.reload()
+}
+lastfont = selectFonts.value;
+
 }
 
    if (selectFonts.value == 0) {
