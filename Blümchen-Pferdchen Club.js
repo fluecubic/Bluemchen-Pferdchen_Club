@@ -73,29 +73,24 @@ function stop(audioElement) {
 
  //font wählen
  let allElements = document.getElementsByClassName("txt")
- let fonts = [sakanaselect(),squidgameselect(),wirewalkerselect()]
- let selectFonts = document.getElementsByTagName("select");
+ let selectFonts = document.getElementById("Select");
 
 function sakanaselect() {
-  localStorage.removeItem("Fontfamily");
  localStorage.setItem("Fontfamily","coolFont");
  setFont()
 }
 
 function squidgameselect() {
-  localStorage.removeItem("Fontfamily");
   localStorage.setItem("Fontfamily","squidgameFont");
   setFont() 
 }
 
 function wirewalkerselect() {
-  localStorage.removeItem("Fontfamily");
   localStorage.setItem("Fontfamily","wirewalker");
   setFont()
 }
 
 function minecraftselect() {
-  localStorage.removeItem("Fontfamily");
   localStorage.setItem("Fontfamily","minecraft");
   setFont()
 }
