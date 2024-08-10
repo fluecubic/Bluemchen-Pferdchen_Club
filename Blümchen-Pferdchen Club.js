@@ -72,36 +72,38 @@ function stop(audioElement) {
  
 
  //font wählen
- var sakana = document.getElementById("sakana");
-var squidgame = document.getElementById("squidgame");
-var wirewalker = document.getElementById("wirewalker");
-var allElements = document.getElementsByClassName("txt");
+ let allElements = document.getElementsByClassName("txt")
+ let fonts = [sakanaselect(),squidgameselect(),wirewalkerselect()]
+ let selectFonts = document.getElementsByTagName("select");
 
 function sakanaselect() {
   localStorage.removeItem("Fontfamily");
  localStorage.setItem("Fontfamily","coolFont");
- window.location.reload();
+ setFont()
 }
 
 function squidgameselect() {
   localStorage.removeItem("Fontfamily");
   localStorage.setItem("Fontfamily","squidgameFont");
-  window.location.reload(); 
+  setFont() 
 }
 
 function wirewalkerselect() {
   localStorage.removeItem("Fontfamily");
   localStorage.setItem("Fontfamily","wirewalker");
-  window.location.reload();
+  setFont()
 }
 
-sakana.onclick = sakanaselect;
-squidgame.onclick = squidgameselect;
-wirewalker.onclick = wirewalkerselect;
-
-for (var i = 0; i < allElements.length; i++) {
+function setFont() {
+  for (var i = 0; i < allElements.length; i++) {
   allElements[i].style.fontFamily = localStorage.getItem("Fontfamily");
 }
+}
+
+fonts[selectFonts.value]
+
+
+
  
  //logbuch
  let seite = 0;
