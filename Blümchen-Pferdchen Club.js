@@ -101,7 +101,7 @@ function setFont() {
   for (var i = 0; i < allElements.length; i++) {
   allElements[i].style.fontFamily = localStorage.getItem("Fontfamily");
 }
-if (lastfont != selectFonts.value) {
+if (lastfont =! selectFonts.value) {
   window.location.reload()
 }
 lastfont = selectFonts.value;
