@@ -100,7 +100,7 @@ function setFont() {
 }
 }
 
-fonts[selectFonts.value]
+   addEventListener("mousemove",fonts[selectFonts.value])
 
 
 
