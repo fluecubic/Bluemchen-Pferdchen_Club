@@ -95,24 +95,38 @@ iframe{
 #choosefont{
   width:220px;
 }
-option{
-    border-radius:40px;
+    
+.Sakana{
+  font-family: coolFont;
+  border-top-left-radius:40px;
+  border-top-right-radius:40px;
     background-image: url("./bilder/Sakura-feature-image-2995703780.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(0,0,0);
 }
-#Sakana{
-  font-family: coolFont;
-}
-#Squidgame{
+.Squidgame{
   font-family: squidgameFont;
+    background-image: url("./bilder/Sakura-feature-image-2995703780.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0,0,0);
 }
-#Wirewalker{
+.Wirewalker{
   font-family: wirewalker;
+    background-image: url("./bilder/Sakura-feature-image-2995703780.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0,0,0);
 }
-#Minecraft{
+.Minecraft{
   font-family: minecraft;
+  border-bottom-left-radius:40px;
+  border-bottom-right-radius:40px;
+    background-image: url("./bilder/Sakura-feature-image-2995703780.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0,0,0);
 }
 #br2{
   margin: 20px;
