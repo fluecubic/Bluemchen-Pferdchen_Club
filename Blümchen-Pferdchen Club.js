@@ -88,7 +88,7 @@ function setFont(font) {
 
 function reload() {
   setFont(fonts[selectFonts.value]);
-  window.location.reload();
+  //window.location.reload();
 }
 
 selectFonts.addEventListener("change",reload);
