@@ -72,44 +72,27 @@ function stop(audioElement) {
  
 
  //font wählen
- let allElements = document.getElementsByClassName("txt")
+ let txtElements = document.getElementsByClassName("txt")
  let selectFonts = document.getElementById("Select");
- let lastfont = 0; 
- let reload = false;
+ let fonts = ["coolFont", "squidgameFont", "wirewalker", "minecraft"];
 
 function setFont(font) {
+
   localStorage.setItem("Fontfamily",font);
 
-  for (var i = 0; i < allElements.length; i++) {
-  allElements[i].style.fontFamily = localStorage.getItem("Fontfamily");
+  for (var i = 0; i < txtElements.length; i++) {
+  txtElements[i].style.fontFamily = localStorage.getItem("Fontfamily");
 }
-
-if (lastfont == selectFonts.value) {
-  reload = false;
-}
-else{
-  reload = true;
-  window.location.reload()
-}
-
-lastfont = selectFonts.value;
 
 }
 
+function reload() {
+  setFont(fonts[selectFonts.value]);
+  window.location.reload();
+}
 
-   if (selectFonts.value == 0) {
-      setFont("coolFont")
-   } else if(selectFonts.value == 1) {
-     setFont("squidgameFont")
-   } else if(selectFonts.value == 2){
-     setFont("wirewalker")
-   } else{
-     setFont("minecraft")
-   }
+addEventListener("change",reload());
 
-
-
- 
  //logbuch
  let seite = 0;
  let seite0 = "Club Treffen 1.8.24-3.8.24<br>🌍Location:<br>Bei Jonas in Worin<br>"+
