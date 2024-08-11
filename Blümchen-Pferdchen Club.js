@@ -75,7 +75,7 @@ function stop(audioElement) {
  let allElements = document.getElementsByClassName("txt")
  let selectFonts = document.getElementById("Select");
  let lastfont = 0; 
-
+ let reload = false;
 
 function setFont(font) {
   localStorage.setItem("Fontfamily",font);
@@ -85,9 +85,10 @@ function setFont(font) {
 }
 
 if (lastfont == selectFonts.value) {
-  break;
+  reload = false;
 }
 else{
+  reload = true;
   window.location.reload()
 }
 
