@@ -91,7 +91,7 @@ function reload() {
   window.location.reload();
 }
 
-selectFonts.addEventListener("change",reload());
+selectFonts.addEventListener("change",reload);
 
  //logbuch
  let seite = 0;
