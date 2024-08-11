@@ -84,7 +84,9 @@ function setFont(font) {
   allElements[i].style.fontFamily = localStorage.getItem("Fontfamily");
 }
 
-if (lastfont == selectFonts.value) {}
+if (lastfont == selectFonts.value) {
+  break;
+}
 else{
   window.location.reload()
 }
