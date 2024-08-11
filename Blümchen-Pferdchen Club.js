@@ -76,46 +76,32 @@ function stop(audioElement) {
  let selectFonts = document.getElementById("Select");
  let lastfont = 0; 
 
-function sakanaselect() {
- localStorage.setItem("Fontfamily","coolFont");
- setFont()
-}
 
-function squidgameselect() {
-  localStorage.setItem("Fontfamily","squidgameFont");
-  setFont() 
-}
+function setFont(font) {
+  localStorage.setItem("Fontfamily",font);
 
-function wirewalkerselect() {
-  localStorage.setItem("Fontfamily","wirewalker");
-  setFont()
-}
-
-function minecraftselect() {
-  localStorage.setItem("Fontfamily","minecraft");
-  setFont()
-  lastfont = selectFonts.value;
-  }
-
-function setFont() {
   for (var i = 0; i < allElements.length; i++) {
   allElements[i].style.fontFamily = localStorage.getItem("Fontfamily");
 }
-if (lastfont != selectFonts.value) {
+
+if (lastfont == selectFonts.value) {}
+else{
   window.location.reload()
 }
+
 lastfont = selectFonts.value;
 
 }
 
+
    if (selectFonts.value == 0) {
-      sakanaselect()
+      setFont("coolFont")
    } else if(selectFonts.value == 1) {
-     squidgameselect()
+     setFont("squidgameFont")
    } else if(selectFonts.value == 2){
-     wirewalkerselect()
+     setFont("wirewalker")
    } else{
-     minecraftselect()
+     setFont("minecraft")
    }
 
 
