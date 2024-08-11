@@ -85,9 +85,11 @@ function setFont(font) {
 }
 
 }
+function setFontx() {
+  setFont(fonts[selectFonts.value])
+}
 
-
-selectFonts.addEventListener("change",setFont(fonts[selectFonts.value]));
+selectFonts.addEventListener("change",setFontx);
 
  //logbuch
  let seite = 0;
