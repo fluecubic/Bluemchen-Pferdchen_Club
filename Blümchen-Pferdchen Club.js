@@ -124,15 +124,14 @@ selectFonts.addEventListener("change",setFontx);
  
 
 //hide
-var hide = document.getElementById("hide");
-var titel = document.getElementById("titel");
-var favicon = document.getElementById("favicon");
+let hide = document.getElementById("hide");
+let titel = document.getElementById("titel");
+let favicon = document.getElementById("favicon");
 
 function hideit() {
   titel.innerHTML = "Schul-Cloud Brandenburg";
-  favicon.href = "fav.icon/schulfavicon.ico"
+  favicon.href = "./bilder/schulfavicon.ico"
   window.open();
   
 }
 hide.onclick = hideit;
-
