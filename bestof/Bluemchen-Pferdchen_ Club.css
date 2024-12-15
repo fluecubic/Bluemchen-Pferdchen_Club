@@ -1,0 +1,285 @@
+@font-face {
+  font-family:squidgameFont;
+  src: url("font/GameOfSquids-1GMVL.ttf");
+}
+
+@font-face {
+  font-family:coolFont;
+  src: url("font/Sakana.ttf");
+}
+
+@font-face {
+  font-family:wirewalker;
+  src: url("font/WirewalkersVertigo.ttf");
+}
+@font-face {
+  font-family: minecraft;
+  src: url(font/minecraft-font/MinecraftRegular-Bmg3.otf);
+}
+
+h1,h2,h3,h4,h5,h6,a,hr,button,input,label,iframe,select{
+    font-family: coolFont;
+    border-radius:40px;
+    background-image: url("./bilder/Sakura-feature-image-2995703780.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0,0,0);
+    
+}
+
+html {
+    background-image: url("./bilder/th-3125799666.jpeg");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    cursor: crosshair;
+}
+
+h1 {
+ border-radius:20px;
+ width:380px;
+ 
+}
+
+ #willkommen, #basis {
+  width: 226px;
+  font-size: 29px;
+  border-radius: 22px;
+}
+
+h2 {
+ width:360px;
+}
+
+a {
+  font-size:18px;
+  padding:3px;
+}
+
+#stevesHead{
+  width: 100px;
+  height: 100px;
+}
+
+#stevesBody{
+ width: 50px;
+ height: 300px;
+ margin-left: 25px;
+}
+
+#steve{
+  display:flex;
+  flex-direction: column;
+  position: fixed;
+  margin-left: 85%;
+  
+}
+#stevetext{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+iframe{
+  border-radius:40px;
+  height: 600px;
+  width: 800px;
+}
+
+#button{
+ font-size:20px;
+ 
+}
+
+
+#choosefont{
+  width:220px;
+}
+    
+.Sakana{
+  font-family: coolFont;
+  border-top-left-radius:40px;
+  border-top-right-radius:40px;
+    background-image: url("./bilder/Sakura-feature-image-2995703780.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0,0,0);
+}
+.Squidgame{
+  font-family: squidgameFont;
+    background-image: url("./bilder/Sakura-feature-image-2995703780.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0,0,0);
+}
+.Wirewalker{
+  font-family: wirewalker;
+    background-image: url("./bilder/Sakura-feature-image-2995703780.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0,0,0);
+}
+.Minecraft{
+  font-family: minecraft;
+  border-bottom-left-radius:40px;
+  border-bottom-right-radius:40px;
+    background-image: url("./bilder/Sakura-feature-image-2995703780.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0,0,0);
+}
+#br2{
+  margin: 20px;
+}
+#logbuch{
+  display:flex;
+  background-image: url("./bilder/book.png");
+  background-repeat: no-repeat;
+ background-size:cover;
+ width: 400px;
+ height: 500px;
+}
+#logbuchtext{
+  font-family: minecraft;
+  margin-top: 34px;
+  margin-bottom: 60px;
+  margin-left: 40px;
+  margin-right: 38px;
+  font-size: 20px;
+  line-height:34px; 
+}
+
+#logbuchu{
+  width: 150px;
+  
+}
+#arrowleft, #arrowright{
+  width: 80px;
+  margin-left: 80px;
+}
+#hide{
+  height: 44px;
+  position:fixed;
+  margin-top:40%;
+}
+
+#login{
+  background-image: url("./bilder/th-3125799666.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: crosshair;
+    border-radius:20px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+#weiter:hover{
+   opacity: 0.7;
+   
+}
+a:hover{
+  opacity: 0.7;
+}
+button:hover{
+  opacity: 0.7;
+}
+label:hover{
+  opacity: 0.7;
+}
+#Madeby{
+    font-family: coolFont;
+    border-radius:40px;
+    background-image: url("./bilder/Sakura-feature-image-2995703780.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0,0,0);
+    width: 300px;
+}
+
+#funlink1,#funlink2,#funlink3,#funlink4{
+margin-bottom: 10px;
+font-size: 25px;
+}
+
+@media  (max-width: 412px){
+  h1 {
+    border-radius:20px;
+    width:90%;
+    font-size: 300%;
+   }
+
+   #willkommen, #basis, #logbuchu, #choosefont {
+    width: 85%;
+    font-size: 250%;
+    border-radius: 22px;
+  }
+
+  a {
+    font-size:100%;
+    padding:3px;
+    width:80%;
+    
+  }
+  
+  iframe{
+    width: 90%;
+    height: 339.3px;
+  }
+
+  #hide{
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+  
+  
+
+  label{
+    width: 400px;
+    font-size: 25px;
+  }
+
+  input{
+    width: 18px;
+    height: 18px;
+  }
+
+  #Madeby{
+    width: 280px;
+    font-size: 20px;
+  }
+
+  #arrowleft, #arrowright{
+    height:50px ;
+    width: 90px;
+    margin-left: 70px;
+
+  }   
+
+  #steve{
+    display: none;
+  }
+
+  #button{
+    font-size: 25px;
+    width: 90%;
+    
+  }
+  
+  body{
+    margin: 0px;
+    margin-left: 5px;
+  }
+  html{
+    background-size:cover;
+    max-width: 412px;
+  }
+ 
+}
+
+html{
+ max-width: 10000px;
+ margin: 0px;
+}
